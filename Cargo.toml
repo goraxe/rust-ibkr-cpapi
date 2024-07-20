@@ -1,0 +1,57 @@
+[package]
+name = "rust-ibkr-cpapi_openapi_client"
+edition = "2021"
+version = "1.0.0"
+authors = [
+    "OpenAPI Generator team and contributors",
+    "Plastic Arts Show <plasticartsshow@gmail.com>",
+]
+description = """
+Client Poral Web API
+ Generated at 2024-07-20T02:09:03.453055373+00:00"""
+readme = "README.md"
+keywords = [
+    "rust-ibkr-cpapi",
+    "OpenAPI",
+    "web",
+]
+categories = [
+    "web-programming",
+    "api-bindings",
+    "authentication",
+]
+license = "Unlicense"
+
+[dependencies]
+serde_json = "^1.0"
+url = "^2.5"
+
+[dependencies.reqwest]
+version = "^0.12"
+features = [
+    "json",
+    "multipart",
+]
+
+[dependencies.serde]
+version = "^1.0"
+features = ["derive"]
+
+[dependencies.uuid]
+version = "^1.8"
+features = [
+    "serde",
+    "v4",
+]
+
+[dev-dependencies.openapi_lib_generator]
+version = "0.2.312"
+features = []
+default-features = false
+
+[lib]
+path = "src/lib.rs"
+name = "rust_ibkr_cpapi_openapi_client"
+edition = "2021"
+crate-type = ["rlib"]
+required-features = []
